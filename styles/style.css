@@ -1,24 +1,25 @@
 .page {
+    font-family: 'Inter', Arial, sans-serif;
     background-color: #2A2C2F;
     max-width: 1280px;
     min-width: 320px;
     margin: 0 auto;
-    font-family: 'Inter', Arial, sans-serif;
+    
 }
 
 .header {
     width: 1184px;
     height: 52px;
     padding: 28px 48px 56px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header__logo {
-width: 176px;
-height: 62px;
+    width: 176px;
+    height: 62px;
 }
 
 .header__lang-list {
@@ -49,3 +50,53 @@ height: 62px;
 .header__lang-link_active {
     text-decoration: underline;
 }
+
+/* СЕКЦИЯ LEAD */
+
+.lead {
+    max-width: 984px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.lead__title {
+    max-width: 720px;
+    font-size: 96px;
+    line-height: 1.1;
+    color: white;
+    margin: 0 0 32px;
+    text-align: center;
+    font-style: normal;
+    
+}
+
+.lead__subtitle {
+    max-width: 640px;
+    font-size: 36px;
+    line-height: 1.2; /*здесь 36px */
+    text-align: center;
+    color: white;
+    margin: 0 0 64px;
+    font-style: normal;
+}
+
+.lead__image {
+    width: 100%;
+}
+
+.lead__caption {
+    color: white;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 1.4; /*здесь 14px */
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.lead__container {
+    margin: 0;
+}
+    
