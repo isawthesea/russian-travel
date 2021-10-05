@@ -99,4 +99,40 @@
 .lead__container {
     margin: 0;
 }
+
+.intro {
+    margin: 0 auto;
+    max-width: 984px;
+    padding-bottom: 92px;
+}
+
+.into__title {
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 58px;
+    text-align: left;
+    color: white;
+}
+
+.intro__subtitle {
+    margin: 0 0 33px;
+    color: white;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: left;
+    max-width: 690px;
+}
+
+.intro__list {
+    list-style: none;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
     
