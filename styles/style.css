@@ -4,7 +4,7 @@
     max-width: 1280px;
     min-width: 320px;
     margin: 0 auto;
-    
+        
 }
 
 .header {
@@ -100,6 +100,9 @@
     margin: 0;
 }
 
+
+/* СЕКЦИЯ INTRO */
+
 .intro {
     margin: 0 auto;
     max-width: 984px;
@@ -115,14 +118,13 @@
     color: white;
 }
 
-.intro__subtitle {
+.intro__text {
     margin: 0 0 33px;
     color: white;
-    font-family: Inter;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
-    line-height: 18px;
+    line-height: 26,08px;
     text-align: left;
     max-width: 690px;
 }
@@ -131,8 +133,103 @@
     list-style: none;
     color: white;
     text-align: left;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
     margin: 0;
     padding: 0;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* СЕКЦИЯ PHOTO-GRID */
+
+.photo-grid {
+  max-width: 1184px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 16px;
+  margin: 0 auto; 
+  padding-bottom: 92px;
+}
+
+.photo-grid__item {
+   max-width: 100%;
+}
+
+/* СЕКЦИЯ PLACES */
+
+.places {
+    max-width: 984px;
+    margin: 0 auto;
+    padding-bottom: 92px;
+    /* padding-top: 92px;
+     */
+} 
+
+.place {
+    display: grid;
+    grid-template-columns: 460px 1fr;    /* !!!! */
+    gap: 48px 40px;
+    grid-template-rows: 1fr;
+    padding-bottom: 80px;
     
+}
+
+.place__image {
+    width: 100%;
+    grid-row: 2/3;
+}
+
+.place__title {
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.0;
+    margin: 0;
+}
+
+.place__website {
+    align-self: end;
+} 
+
+ 
+.place__url-heading {
+    margin: 0 0 12px;
+    color: #AAAAAA;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.0;
+    text-transform: uppercase;
+}
+
+.place__link {
+    margin: 0;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.place__paragraph {
+    margin: 0;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #FFFFFF;
+}
+
+.place__paragraph:last-of-type {
+        margin-bottom: 0;
+}
+
+
+     
