@@ -250,7 +250,6 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    
 }
 
 .cover__overlay::after {
@@ -295,11 +294,6 @@
     padding-top: 32px;
 
 }
-
-
-
-
-
 
 /* СЕКЦИЯ FOOTER */
 
