@@ -1,10 +1,11 @@
+/* @import url(../fonts/inter.css); */
+
 .page {
     font-family: 'Inter', Arial, sans-serif;
     background-color: #2A2C2F;
     max-width: 1280px;
     min-width: 320px;
     margin: 0 auto;
-        
 }
 
 .header {
@@ -47,8 +48,14 @@
     text-decoration: none;
 }
 
+.header__lang-link:hover {
+    opacity: .7;
+    transition: opacity 1s linear 0.5s;
+}
+
 .header__lang-link_active {
     text-decoration: underline;
+    
 }
 
 /* СЕКЦИЯ LEAD */
@@ -59,28 +66,28 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-
 }
 
 .lead__title {
     max-width: 720px;
-    font-size: 96px;
-    line-height: 1.1;
     color: white;
     margin: 0 0 32px;
     text-align: center;
     font-style: normal;
-    
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
 }
 
 .lead__subtitle {
     max-width: 640px;
-    font-size: 36px;
-    line-height: 1.2; /*здесь 36px */
-    text-align: center;
     color: white;
     margin: 0 0 64px;
     font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
 }
 
 .lead__image {
@@ -90,16 +97,17 @@
 .lead__caption {
     color: white;
     font-style: normal;
-    font-size: 10px;
-    line-height: 1.4; /*здесь 14px */
     font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
+    margin-top: 8px;
 }
 
 .lead__container {
     margin: 0;
 }
-
 
 /* СЕКЦИЯ INTRO */
 
@@ -110,9 +118,10 @@
 }
 
 .into__title {
-    font-size: 54px;
+    margin: 92px 0 40px;
     font-style: normal;
     font-weight: 900;
+    font-size: 54px;
     line-height: 58px;
     text-align: left;
     color: white;
@@ -121,12 +130,12 @@
 .intro__text {
     margin: 0 0 33px;
     color: white;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 26,08px;
     text-align: left;
     max-width: 690px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;   
 }
 
 .intro__list {
@@ -139,7 +148,11 @@
     line-height: 18px;
     margin: 0;
     padding: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+.intro__list-number {
+    font-weight: normal;
 }
 
 /* СЕКЦИЯ PHOTO-GRID */
@@ -163,8 +176,6 @@
     max-width: 984px;
     margin: 0 auto;
     padding-bottom: 92px;
-    /* padding-top: 92px;
-     */
 } 
 
 .place {
@@ -190,7 +201,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
-    line-height: 1.0;
+    line-height: 76px;
     margin: 0;
 }
 
@@ -206,9 +217,11 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 1.0;
+    line-height: 12px;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
+
 
 .place__link {
     margin: 0;
@@ -216,8 +229,14 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 22px;
     text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.place__link:hover {
+    opacity: .7;
+    transition: opacity 1s linear 0.5s;
 }
 
 .place__paragraph {
@@ -226,7 +245,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 29px;
     color: #FFFFFF;
 }
 
@@ -234,8 +253,8 @@
         margin-bottom: 0;
 }
 
-/* СЕКЦИЯ COVER */
 
+/* СЕКЦИЯ COVER */
 
 .cover__overlay {
     background-image: url(../images/cover-trains.jpg);
@@ -277,8 +296,6 @@
     font-weight: 900;
     text-align: center;
     max-width: 560px;
-    
-
 }
 
 .cover__subtitle {
@@ -292,7 +309,6 @@
     max-width: 360px;
     text-align: center;
     padding-top: 32px;
-
 }
 
 /* СЕКЦИЯ FOOTER */
@@ -309,8 +325,7 @@
 .footer__list {
     list-style: none;
     margin: 0;
-    margin-right: 18px;
-    
+    margin-right: 18px;    
 }
 
 .footer__list:last-of-type {
@@ -334,6 +349,11 @@
     line-height: 18px;
 }
 
+.footer__link-item:hover {
+    opacity: .7;
+    transition: opacity 1s linear 0.5s;
+}
+
 .footer__copyright {
     margin: 0;
     color: white;
@@ -343,13 +363,6 @@
     font-size: 14px;
     line-height: 16px;
 }
-
-
-
-
-/* .footer__link:hover {
-     opacity: .8;                           /*  !!! */
-  /* } */ 
 
 
   
