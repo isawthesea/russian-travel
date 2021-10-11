@@ -9,23 +9,17 @@
   line-height: 100px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .lead__title {
     margin: 0 24px 32px 24px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .lead__title {
-    max-width: 288px;
-    /* margin: 0 16px 16px; */
     font-size: 40px;
     line-height: 44px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .lead__title {
-    max-height: 70px;
+    max-width: 720px;
+    margin: 0 16px 16px 16px;
   }
 }
